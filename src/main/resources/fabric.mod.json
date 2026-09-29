@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "dynamicsurrounding",
+  "version": "${version}",
+  "name": "Dynamic Surrounding",
+  "description": "Adds dynamic reverb to ambient/environment sounds when the player is underground in a cave.",
+  "authors": [
+    "Geord"
+  ],
+  "contact": {
+    "sources": "https://github.com/clainenxx",
+    "homepage": "https://github.com/clainenxx"
+  },
+  "license": "MIT",
+  "icon": "assets/dynamicsurrounding/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.dynamicsurrounding.DynamicSurroundingClient"
+    ]
+  },
+  "mixins": [
+    "dynamicsurrounding.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.5",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
